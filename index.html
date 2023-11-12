@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,img, initial-scale=1.0">
+    <link rel="stylesheet" href="sharma.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="sumit logo.png">
+            </a>
+        </div>
+        <div class="navigation">
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger"></div>
+            
+            <ul class="menu">
+                <li><a href="#home">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#">testimonials</a></li>
+                <li><a href="#contact">contacts</a></li>
+            </ul>
+        </div>
+    </header>
+<div id="content">
+
+    <main>
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="photo catering 2.jpg"><h1>book your order</h1><button class="call-button" id="callButton">Call Now</button></div>
+                    <div class="swiper-slide"><img src="photo catering.jpg"></div>   
+                </div>     
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+
+<section class="page1">
+    <div id="home">
+        <h1>new royal caterers & event</h1>
+        <p>   At New Royal Caterer ypu can find all types of functions and event style catering services in Chittaranjan,Jharkhand be it a birthday, wedding, get-together, reunion of old friends, marriage anniversary, kitty party or any other types of event.<br>
+            <br>  We have a passion for healthy home food. Further more, our chefs are dedicated to creating delicious and nutritious food from our extensive many selection.</p>
+    </div>
+</section>
+
+
+
+<section id="services">
+    <div class="page2">
+        <h1>services</h1>
+        <div class="coloum1">
+            <img src="wedding"><h2>weddings</h2>
+            <p>We make sure to make your weddings more memorable by serving the best food to you and your guests. </p>
+        </div>
+        <div class="coloum2">
+            <img src="coorporate event.webp"><h2>corporate events</h2>
+            <p>make your next event a success. we serve the right kind of delicacies keeping in mind your guest profile</p>
+        </div>
+        <div class="coloum3">
+            <img src="private event.jpg"><h2>private events</h2>
+            <p>we ensure that the event is made memorable with exquisite delicacies prepared according to the theme of the event.</p>
+        </div>
+        <div class="coloum4">
+            <img src="birthday event.webp"><h2>birthday parties</h2>
+            <p>our team is committed to make youe events run smoothly by providing delicious food.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="gallery">
+    <h1>gallery</h1>
+</section>
+
+
+
+
+<section id="contact">
+    <div class="contact-info">
+        <div><i class="fa-solid fa-location-dot"></i> MIHIJAM,Jamtara - Chittaranjan Road Jamtara, Jharkhand 815354,India</div>
+        <div><i class="fa-solid fa-envelope"></i> sumitsharma@gmail.com</div> 
+        <div><i class="fa-solid fa-phone-volume"></i> +917365988131, +9176792 41144</div>
+        <div><i class="fa-solid fa-clock"></i> Mon-sat, 10:00am-10:00pm</div>
+    </div>
+    <div class="contact-form">
+        <h2>contact us</h2>
+        <form class="contact" action="" method="post">
+            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required><br>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" name="submit" class="send-btn" value="send">
+
+        </form>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script>
+            const swiper= new Swiper('.swiper',{
+               autoplay: {
+                delay:3000,
+                disableOnInteraction: false,
+
+               },
+                loop:true,
+                pagination: {
+                    el:'.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                
+            });
+        </script>
+        <script>
+            document.getElementById("callButton").addEventListener("click", function() {
+                // Replace 'YourPhoneNumber' with the actual phone number you want to call
+                var phoneNumber = "+917679241144";
+                
+                // Use the tel: scheme to initiate a phone call
+                window.location.href = "tel:" + phoneNumber;
+            });
+        </script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        
+</body>
+</html>
