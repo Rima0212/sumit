@@ -824,4 +824,24 @@ padding-top: 7%;
         }
         
     }
+    @media (max-width:372px) {
+        .coloum2{
+            margin-top: 20%;
+        }
+        .coloum2 p{
+            margin-top: 48%;
+        }
+        .coloum3{
+            margin-top: 20%;
+        }
+        .coloum3 p{
+            margin-top: 85%;
+        }
+        .coloum4{
+            margin-top: 20%;
+        }
+        .coloum4 p{
+            margin-top: 122%;
+        }
+    }
    
